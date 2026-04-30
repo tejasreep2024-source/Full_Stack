@@ -1,0 +1,17 @@
+<script>
+var rows = parseInt(prompt("Enter Number : "));
+if(isNaN(rows)){
+    alert("Please enter valid number");
+}else{
+    // outer loop
+    for(i=1;i<=rows;i++){
+        // inner loop
+        for(j=1;j<=i;j++){
+            // document.write("*");
+            document.write(j);
+            // document.write(i);
+        }
+        document.write("<br>");
+    }
+}
+</script>

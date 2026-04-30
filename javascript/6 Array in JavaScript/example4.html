@@ -1,0 +1,16 @@
+ <script>
+    var arr = [45,23,45,78,23,56,78];
+    document.write("<br>Array elements are : "+arr);
+    document.write("<br>minimum element : ",Math.min(...arr));    
+    document.write("<br>maximum element : ",Math.max(...arr));    
+    document.write("<br>minimum element : ",Math.min(1,2,3,4,6,7));    
+    document.write("<br>minimum element : ",Math.min.apply(null,arr));    
+    document.write("<br>maximum element : ",Math.max.apply(null,arr));    
+    document.write("<br>Sorting arr in Ascending : ",arr.sort((a,b)=>{
+        return a-b;
+    }));    
+    document.write("<br>Sorting arr in  Descending : ",arr.sort((a,b)=>{
+        return b-a;
+    }));    
+
+</script> 

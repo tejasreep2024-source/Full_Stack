@@ -1,0 +1,15 @@
+<!-- number of digits count -->
+
+<script>
+    var num = prompt("Enter Number : ");
+    if(isNaN(num)){
+        alert("Please enter valid number");
+    }else{
+        var count=0;
+        while(num>0){
+            count++;
+            num = parseInt(num/10);
+        }
+        document.write("Nunver of digits : "+count);
+    }
+</script>

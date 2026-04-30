@@ -1,0 +1,23 @@
+<script>
+    var arr = [198,28,22,398,31,40]
+    document.write("Array elements are : "+arr);
+    var arrNew = arr.some((element,index)=>{
+        document.write("<br>index : "+index);
+        return element%2==0;
+    })
+    document.write("<br>arrNew : "+arrNew);
+
+    var arrNew = arr.every((element,index)=>{
+        document.write("<br>index : "+index);
+        return element%2==0;
+    })
+    document.write("<br>arrNew : "+arrNew);
+
+    var arrNew = arr.reduce((a,b)=>{
+        document.write("<br>a : "+a+" b : "+b);
+        return a+b;
+    },0)
+    document.write("<br>arrNew : "+arrNew);
+
+
+</script>

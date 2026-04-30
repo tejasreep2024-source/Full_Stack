@@ -1,0 +1,27 @@
+<script>
+    var arr = [34,45,67,89,35]
+    document.write("Array elements are : "+arr);
+    arr.forEach((element,index)=>{
+        document.write("<br>arr["+index+"] : "+element);
+    })
+    
+    var arrNew = arr.forEach((element,index)=>{
+        return element;
+    })    
+    document.write("<br>Array elements are : ",arrNew);
+
+    arr.find((element,index)=>{
+        document.write("<br>arr["+index+"] : "+element);
+    })
+
+    var arrNew = arr.find((element,index)=>{
+        return element%2==0;
+    })    
+    document.write("<br>Array elements are : ",arrNew);
+
+    var arrNew = arr.filter((element,index)=>{
+        return element%2==0;
+    })    
+    document.write("<br>Array elements are : ",arrNew);
+
+</script>

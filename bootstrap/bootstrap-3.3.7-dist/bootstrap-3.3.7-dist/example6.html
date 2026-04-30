@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        div{
+        height : auto ;
+        width : 500px;
+        border:2px solid black;
+        margin:auto;
+        padding:20px;
+        }
+        input,select,textarea,button{
+            margin:5px;
+
+        }
+    </style>
+</head>
+<body >
+    <center><h1>Form Class Examples</h1></center>
+    <div>
+        <form action="" class="form-group">
+        <input class="form-control" type="text" placeholder="enter username">
+        <input class="form-control" type="email" placeholder="enter email">
+        <input class="form-control" type="password" placeholder="enter password">
+        <label style="margin-left: 5px;">gender:</label>
+        <input class="inline-radio" type="radio" id="male" name="gender">male
+        <input class="inline-radio"  type="radio" id="female" name="gender">female
+        <select class="form-control" name="subject" id="subject">
+            <option value="">select subject </option>
+            <option value="">c language</option>
+            <option value=""> c++ language</option>
+            <option value="">java language</option>     
+        </select>
+        <textarea name="address" id="address" rows="3" placeholder="enter address"></textarea>
+        <button class="btn btn-success btn-block">register</button>
+        <button class="btn btn-danger btn-block ">reset</button>
+    
+        </form>
+    </div>
+</body>
+</html>

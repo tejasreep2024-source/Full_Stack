@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border-style: solid;
+        }
+    </style>
+    <script>
+        function changeShape(shape){
+            var demo = document.getElementById("demo");
+            if(shape=='circle'){
+                demo.style.width="200px";
+                demo.style.borderRadius="50%";
+            } else if(shape=='square'){
+                demo.style.width="200px";
+                demo.style.borderRadius="0%";
+            } else if(shape=='rectangle'){
+                demo.style.borderRadius="0%";
+                demo.style.width="400px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeShape('circle')">Circle</button>
+    <button onclick="changeShape('square')">Square</button>
+    <button onclick="changeShape('rectangle')">Rectangle</button>
+    <br><br> <div id="demo"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var d1 = new Date();
+            document.getElementById("show").innerHTML=d1.toLocaleTimeString();
+        }
+    </script>
+</head>
+<body>
+    <p id="show"></p>
+    <button onclick="show()">click me</button>
+<button onclick="document.getElementById('demo').innerHTML=new Date()">click me</button>
+<button onclick="this.innerHTML=new Date()">click me </button>
+<button onclick="this.innerHTML=new Date().toLocaleDateString()">click me</button>
+<button onclick="this.innerHTML=new Date().toLocaleTimeString()">click me</button>
+<button onclick="this.innerHTML=new Date().toLocaleString()">click mee</button>
+<button onclick="this.innerHTML=new Date().getFullYear()">click  me</button>
+<button onclick="this.innerHTML=new Date().getMonth()+1">click me</button>
+
+<p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black ;
+    margin: 5px;
+    background-color: aquamarine;
+    text-align: center;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black ;
+    background-color: pink;
+    text-align: center;
+    
+}

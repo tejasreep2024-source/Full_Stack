@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click me </button>>
+    <script>
+        function throttie(func, delay) {
+            let lastTime=0;
+            return function () {
+                let currenttime=Date.now();
+                if(currenttime-lastTime >= delay){
+                    func();
+                    lastTime = currenttime;
+                }
+                
+            }
+        }
+        function PrintMessage() {
+            console.log("Button Clicked at ", new Date().toLocaleTimeString());
+        }
+        const throttieclick = throttie(PrintMessage,2000);
+        document.getElementById("btn").addEventListener("click", throttieclick)
+    </script>
+</body>
+
+</html>
